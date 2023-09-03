@@ -1,0 +1,13 @@
+# Assumptions
+- file transfer is text files only
+- transfer hello.txt saved in the server folder to the client folder 
+- localhost of the machine should be set accordingly. eg 192.168.68.59
+- client program runs once and exits
+
+
+# Test procedure
+- run server by typing gcc main.c server.c -o main followed by main from the command prompt in the server
+- run client by typing gcc main.c client.c -o main followed by main from the command prompt in the client
+- click enter from the client to download hello.txt from the server
+- can run multiple clients at once
+- server keeps waiting for connection and sends data until user presses ctrl+c to stop the server
